@@ -1,0 +1,14 @@
+- Auditing planificateur feature in Grok_Finlande repo [2026-08-18]
+- Key files: src/routes/planificateur.tsx, src/lib/planner.ts, plan-conflicts.ts, plan-rules.ts, places-hot.ts, flight-arrival.ts
+- Branch: feat/planner-perf-and-quality
+- Aurores Lot 3 confirmed working by user [2026-08-18]
+- Return flight + last-day departure mirror implemented in distributeDays + UI [2026-08-18]
+- Commits: a7e642c (planner core), e8b5043 (UI vol retour), 4fd6f985 (scorePlace fix + centre-calme any), 2a7317f8 (plan-rules calm)
+- Fiches « Promenade centre-ville » (hki/tre/tku-centre-calme) role any, soft filler, boosted on arrivalCalm
+- Fixed scorePlace ReferenceError (themes → theme)
+- Added Shopping centre-ville soft fillers (hki/tre/tku-shopping) + arrivalCalm boost [2026-08-18]
+- Commits: b771f0fe (plan-rules shopping), b8a45e0e (places shopping)
+- Fixed soir filter: centre-ville soft (promenade/shopping) now eligible on arrivalCalm/afterDrive [2026-08-18]
+- Commit: 8f2e508c (planner soir soft fillers)
+- PR #1 merged to main (squash 538e47bc) — planner perf + aurores + vols A/R + soft centre-ville [2026-08-19]
+- Lot 0 bench on main; golden Node tests still optional follow-up
